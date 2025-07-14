@@ -1,0 +1,132 @@
+{
+    "hero_title": {
+        "en": "A Life, Knowingly Arranged.",
+        "xh": "Ubomi, Obulungiselelwe Ngokwazi.",
+        "zu": "Impilo, Ehlelwe Ngokwazi."
+    },
+    "hero_subtitle": {
+        "en": "sazi.life provides insightful tools and empathetic guidance to help you ground yourself in self-knowledge, cultivate your inner resources, and branch out to create a life of authentic harmony and contentment.",
+        "xh": "i-sazi.life ibonelela ngezixhobo ezinokuqonda kunye nesikhokelo esinovelwano ukukunceda uzinzise kulwazi lwakho, uhlakulele izixhobo zakho zangaphakathi, kwaye wandise ukudala ubomi obuyinyani obunemvisiswano nolwaneliseko.",
+        "zu": "i-sazi.life inikeza amathuluzi anokuqonda nesiqondiso esinobubele ukukusiza uzigxilise olwazini lwakho, uhlakulele izinsiza zakho zangaphakathi, futhi unwebe ukuze udale impilo enokuzwana kweqiniso nokwaneliseka."
+    },
+    "pillars_title": {
+        "en": "Our Three Pillars",
+        "xh": "Iintsika Zethu Ezintathu",
+        "zu": "Izinsika Zethu Ezintathu"
+    },
+    "pillar1_title": {
+        "en": "Intentionality",
+        "xh": "Ukunyaniseka",
+        "zu": "Inhloso"
+    },
+    "pillar1_desc": {
+        "en": "Living with awareness, mindfulness, and conscious choice. The antidote to a life lived on autopilot.",
+        "xh": "Ukuphila unolwazi, unengqondo, kwaye ukhetha ngokuqaphela. Iyeza kubomi obuphila ngokuzenzekelayo.",
+        "zu": "Ukuphila ngokuqaphela, ukucabangisisa, nokukhetha ngokwazi. Ikhambi lempilo ephilwa ngokuzenzakalelayo."
+    },
+    "pillar2_title": {
+        "en": "Creation",
+        "xh": "Indalo",
+        "zu": "Ukudala"
+    },
+    "pillar2_desc": {
+        "en": "The active, hands-on process of designing your experience. Life is a project you can actively build.",
+        "xh": "Inkqubo esebenzayo, yokuyila amava akho. Ubomi asiyonto yenzekayo kuwe, kodwa yiprojekthi onokuyakha ngokwakho.",
+        "zu": "Inqubo esebenzayo, yokuklama isipiliyoni sakho. Impilo akuyona into eyenzekayo kuwe, kodwa iphrojekthi ongayakha ngenkuthalo."
+    },
+    "pillar3_title": {
+        "en": "Fulfillment",
+        "xh": "Uzaliseko",
+        "zu": "Ukugcwaliseka"
+    },
+    "pillar3_desc": {
+        "en": "Cultivating a deep, holistic sense of well-being that arises when your life is in alignment with your true self.",
+        "xh": "Ukuhlakulela imvakalelo enzulu, epheleleyo yokuphila kakuhle evela xa ubomi bakho buhambelana nesiqu sakho sokwenyani.",
+        "zu": "Ukuhlakulela umuzwa ojulile, ophelele wenhlalakahle ovela lapho impilo yakho iqondaniswe nobuntu bakho beqiniso."
+    },
+    "nav_about": {
+        "en": "About",
+        "xh": "Nathi",
+        "zu": "Mayelana Nathi"
+    },
+    "nav_tools": {
+        "en": "Tools",
+        "xh": "Izixhobo",
+        "zu": "Amathuluzi"
+    },
+    "nav_contact": {
+        "en": "Contact",
+        "xh": "Qhagamshelana",
+        "zu": "Thintana"
+    },
+    "footer_text": {
+        "en": "Consciously arranging a life of fulfillment.",
+        "xh": "Ukulungiselela ngokuqaphela ubomi obunempumelelo.",
+        "zu": "Ukuhlela ngokuqaphela impilo yokugcwaliseka."
+    },
+    "about_title": {
+        "en": "Our story is rooted in the soil of experience.",
+        "xh": "Ibali lethu limiliselwe kumhlaba wamava.",
+        "zu": "Indaba yethu igxile emhlabathini wesipiliyoni."
+    },
+    "about_subtitle": {
+        "en": "sazi.life was not born in a boardroom. It grew from a simple, powerful truth: the most profound knowledge often comes from the most humble beginnings.",
+        "xh": "i-sazi.life ayizange izalelwe kwigumbi lebhodi. Yakhula kwinyaniso elula, enamandla: ulwazi olunzulu luhlala luvela kwezona ziqalo zithobekileyo.",
+        "zu": "i-sazi.life ayizalwanga ebhodini. Yakhula eqinisweni elilula, elinamandla: ulwazi olujulile luvame ukuvela ekuqaleni okuphansi kakhulu."
+    },
+    "founder_title": {
+        "en": "From Under a Tree in Transkei",
+        "xh": "Ukusuka Phantsi Komthi eTranskei",
+        "zu": "Kusuka Ngaphansi Kwesihlahla eTranskei"
+    },
+    "founder_p1": {
+        "en": "The founder of sazi.life, a Xhosa man born in 1982, first learned his lessons not in a classroom, but under the shade of a tree in Transkei. This open-air school was more than a place of education; it was a lesson in itself. It taught resilience, the importance of community, and that knowledge is a natural resource, available to all who seek it.",
+        "xh": "Umseki we-sazi.life, indoda yomXhosa owazalwa ngo-1982, waqala wafunda izifundo zakhe kungekho kwigumbi lokufundela, kodwa phantsi komthunzi womthi eTranskei. Esi sikolo sasemoyeni sasingaphezulu kwendawo yemfundo; sasisifundo ngokwaso. Safundisa ukomelela, ukubaluleka koluntu, kunye nokuba ulwazi sisixhobo sendalo, esifumanekayo kuye wonke umntu osifunayo.",
+        "zu": "Umsunguli we-sazi.life, indoda yomXhosa owazalwa ngo-1982, waqala wafunda izifundo zakhe hhayi ekilasini, kodwa ngaphansi komthunzi wesihlahla eTranskei. Lesi sikole esivulekile sasingaphezu kwendawo yemfundo; sasiyisifundo ngokwaso. Safundisa ukuqina, ukubaluleka komphakathi, nokuthi ulwazi luwumthombo wemvelo, otholakalayo kubo bonke abalufunayo."
+    },
+    "founder_p2": {
+        "en": "That tree is the literal and figurative root of sazi.life. It symbolizes our belief that growth is an organic process. Like a tree, a fulfilling life requires strong roots (self-knowledge), a solid trunk (conscious creation), and branches that reach for the sun (fulfillment).",
+        "xh": "Loo mthi yingcambu yokoqobo kunye neyomfuziselo ye-sazi.life. Ifuzisela inkolelo yethu yokuba ukukhula yinkqubo yendalo. Njengomthi, ubomi obanelisayo bufuna iingcambu ezomeleleyo (ukuzazi), isiqu esiqinileyo (indalo eqaphelayo), kunye namasebe afikelela elangeni (ukuzaliseka).",
+        "zu": "Leso sihlahla siyimpande engokoqobo nengokomfanekiso ye-sazi.life. Sifanekisela inkolelo yethu yokuthi ukukhula kuyinqubo yemvelo. Njengesihlahla, impilo egcwalisayo idinga izimpande eziqinile (ukuzazi), isiqu esiqinile (ukudala ngokuqaphela), namagatsha afinyelela elangeni (ukugcwaliseka)."
+    },
+    "philosophy_title": {
+        "en": "A Philosophy in a Name",
+        "xh": "Ifilosofi Egameni",
+        "zu": "Ifilosofi Egameni"
+    },
+    "philosophy_p1": {
+        "en": "The name 'sazi' itself holds our philosophy. From the isiXhosa for 'knowingly,' it is a call to live with intention. From Italian, it is the 'satiation' of a life fulfilled. And from Persian, it is the 'arrangement' or 'making' of a life by design. These meanings guide everything we do.",
+        "xh": "Igama elithi 'sazi' ngokwalo liphethe ifilosofi yethu. Ukusuka kwisiXhosa esithi 'ngokwazi,' lubizo lokuphila ngenjongo. Ukusuka kwisiTaliyane, 'kukwaneliseka' kobomi obuzalisekileyo. Kwaye ukusuka kwisiPersi, 'kulungiselelo' okanye 'ukwenziwa' kobomi ngoyilo. Ezi ntsingiselo zikhokela yonke into esiyenzayo.",
+        "zu": "Igama elithi 'sazi' ngokwalo liqukethe ifilosofi yethu. Kusukela esiXhosa esisho 'ngokwazi,' kuwubizo lokuphila ngenhloso. Kusukela esiTaliyane, 'ukusutha' kwempilo egcwalisekile. Futhi kusukela esiPheresiya, 'ukulungiselela' noma 'ukwenza' kwempilo ngokuklama. Lezi zincazelo ziqondisa konke esikwenzayo."
+    },
+    "contact_title": {
+        "en": "Let's Connect",
+        "xh": "Masinxibelelane",
+        "zu": "Asixhumane"
+    },
+    "contact_subtitle": {
+        "en": "Whether you have a question, a story to share, or an idea to explore, we would love to hear from you.",
+        "xh": "Nokuba unombuzo, ibali ongafuna ukwabelana ngalo, okanye umbono ongafuna ukuwuphonononga, singathanda ukuva kuwe.",
+        "zu": "Noma ngabe unombuzo, indaba ongathanda ukwabelana ngayo, noma umbono ongathanda ukuwuhlola, singathanda ukuzwa kuwe."
+    },
+    "form_name": {
+        "en": "Name",
+        "xh": "Igama",
+        "zu": "Igama"
+    },
+    "form_email": {
+        "en": "Email",
+        "xh": "I-imeyile",
+        "zu": "I-imeyili"
+    },
+    "form_message": {
+        "en": "Message",
+        "xh": "Umyalezo",
+        "zu": "Umlayezo"
+    },
+    "form_submit": {
+        "en": "Send Message",
+        "xh": "Thumela Umyalezo",
+        "zu": "Thumela Umlayezo"
+    }
+}

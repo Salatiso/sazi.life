@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | sazi.life</title>
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts for Brand Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-background text-text font-body">
+
+    <!-- Header Component will be loaded here by JavaScript -->
+    <header id="header-placeholder"></header>
+
+    <!-- Main Content of the Contact Page -->
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- Hero Section -->
+        <section class="text-center my-12">
+            <h1 class="text-4xl md:text-5xl font-black font-heading mb-4" data-translate-key="contact_title">Let's Connect</h1>
+            <p class="text-lg md:text-xl text-muted max-w-3xl mx-auto" data-translate-key="contact_subtitle">
+                Whether you have a question, a story to share, or an idea to explore, we would love to hear from you.
+            </p>
+        </section>
+
+        <!-- Contact Form and Details Section -->
+        <section class="my-12 md:my-24 max-w-3xl mx-auto">
+            <div class="bg-surface p-8 md:p-12 rounded-lg shadow-md">
+                <form action="#" method="POST">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block mb-2 text-sm font-bold" data-translate-key="form_name">Name</label>
+                            <input type="text" id="name" name="name" class="w-full form-input">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2 text-sm font-bold" data-translate-key="form_email">Email</label>
+                            <input type="email" id="email" name="email" class="w-full form-input">
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <label for="message" class="block mb-2 text-sm font-bold" data-translate-key="form_message">Message</label>
+                        <textarea id="message" name="message" rows="6" class="w-full form-input"></textarea>
+                    </div>
+                    <div class="mt-8 text-center">
+                        <button type="submit" class="form-button" data-translate-key="form_submit">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Component will be loaded here by JavaScript -->
+    <footer id="footer-placeholder"></footer>
+
+    <!-- Load JavaScript -->
+    <script src="assets/js/loader.js"></script>
+    <script src="assets/js/translate.js"></script>
+
+    <!-- Temporary style for form elements until they are in the main CSS -->
+    <style>
+        .form-input {
+            background-color: var(--color-background);
+            border: 1px solid var(--color-muted);
+            color: var(--color-text);
+            padding: 0.75rem 1rem;
+            border-radius: 0.375rem;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        .form-input:focus {
+            outline: none;
+            border-color: var(--color-accent-green);
+            box-shadow: 0 0 0 2px rgba(144, 238, 144, 0.4);
+        }
+        .form-button {
+            background-color: var(--color-accent-green);
+            color: var(--color-background);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            padding: 0.75rem 2rem;
+            border-radius: 0.375rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        .form-button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</body>
+</html>
