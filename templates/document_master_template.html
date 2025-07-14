@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sazi.life - Master Document Template</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* * SAZI.LIFE MASTER TEMPLATE STYLES
+         * This style block defines the core branding, layout, and print functionality.
+         */
+        :root {
+            --color-background: #171F14; /* Deep Forest */
+            --color-surface: #1A2415;
+            --color-text: #F7F7F7; /* Alabaster */
+            --color-accent-green: #90EE90; /* Vibrant Green */
+            --color-accent-brown: #A0522D; /* Earthy Brown */
+            --color-muted: #7E9B84; /* Muted Sage */
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Lora', serif;
+        }
+
+        body {
+            background-color: var(--color-background);
+            color: var(--color-text);
+            font-family: var(--font-body);
+            line-height: 1.7;
+        }
+
+        /* Core Typography */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--color-text);
+            line-height: 1.3;
+        }
+        
+        .sazi-logo {
+            background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCbvnmWwHX66Fc6Zypg1ERxcfMJ7hPEaQrIHiFicDH-MIUuPWRqfHfGSwnCpaJZ9t7mb478jZQgqQhHkaDU8gtIsSMxtWsoctVHR9MRdibBFj5-5ihlmPPDseqTUmSNhkTseapzfWsrCITlTaJTlYonXBbYMeqffSa-Rucq1teNr3vNQitKFiQimEaqkrUNnvDVUQfh0YBkKkU5Ji7viPtfUqROqIjUy_S0oMUsv8s5fc3Bx2ECUdmj9R2dDIzXlYJaIdd_7T-33PFS");
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Document Structure */
+        .page-container {
+            max-width: 8.5in;
+            margin: auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .document-page {
+            background-color: var(--color-background);
+            padding: 1in;
+            min-height: 11in;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 1px solid #333;
+        }
+
+        .cover-page {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .page-footer {
+            margin-top: auto;
+            padding-top: 1rem;
+            font-size: 0.8rem;
+            color: var(--color-muted);
+            border-top: 1px solid var(--color-muted);
+            text-align: right;
+            width: 100%;
+        }
+        
+        /* Interactive Controls (Hidden in Print) */
+        .controls {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 100;
+        }
+        .control-btn {
+            background-color: var(--color-accent-green);
+            color: var(--color-background);
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(144, 238, 144, 0.4);
+            transition: all 0.3s ease;
+        }
+        .control-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(144, 238, 144, 0.6);
+        }
+
+        /* * PRINT STYLES
+         * These rules ensure the document looks professional when printed or saved as PDF.
+         */
+        @media print {
+            body {
+                background-color: #fff;
+                color: #000;
+            }
+            .page-container {
+                box-shadow: none;
+            }
+            .document-page {
+                padding: 0;
+                border: none;
+                margin: 0;
+                background-color: #fff !important;
+                color: #000 !important;
+                height: auto;
+                min-height: 0;
+                page-break-after: always;
+            }
+            .document-page:last-child {
+                page-break-after: auto;
+            }
+            .cover-page {
+                height: 10in; /* Ensure cover takes a full page */
+            }
+            h1, h2, h3, h4, h5, h6, p, li, blockquote {
+                color: #000 !important;
+            }
+            .sazi-logo {
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            .page-footer, .controls, .page-controls {
+                display: none !important;
+            }
+            .hidden-in-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body contenteditable="false">
+
+    <!-- INTERACTIVE UI CONTROLS -->
+    <div class="controls hidden-in-print">
+        <button onclick="window.print()" class="control-btn" title="Print or Save as PDF">
+            <i class="fas fa-print"></i>
+        </button>
+        <button onclick="shareDocument()" class="control-btn" title="Share Document">
+            <i class="fas fa-share-alt"></i>
+        </button>
+    </div>
+
+    <!-- DOCUMENT CONTAINER -->
+    <div class="page-container">
+
+        <!-- FRONT COVER PAGE -->
+        <div id="page-1" class="document-page cover-page">
+            <div class="sazi-logo w-48 h-48 mx-auto mb-12"></div>
+            <h1 class="text-5xl font-black mb-4" style="font-family: var(--font-heading);" contenteditable="true">DOCUMENT TITLE</h1>
+            <p class="text-xl text-gray-300" style="font-family: var(--font-body);" contenteditable="true">An optional subtitle for additional context.</p>
+            <div class="mt-24 text-sm text-gray-400">
+                <p contenteditable="true"><strong>Author:</strong> Author Name</p>
+                <p contenteditable="true"><strong>Date:</strong> July 12, 2025</p>
+            </div>
+        </div>
+
+        <!-- CONTENT PAGE 1: INTRODUCTION -->
+        <div id="page-2" class="document-page">
+            <div class="page-content" contenteditable="true">
+                <h2 class="text-3xl font-bold mb-6 border-b-2 pb-3" style="border-color: var(--color-accent-green);">1. Our Vision & Mission</h2>
+                <p class="mb-4">sazi.life is founded on a simple yet profound idea: that every individual holds the potential for a deeply fulfilling life, and that this potential can be consciously cultivated through intention and creation.</p>
+                <h3 class="text-xl font-bold mt-6 mb-2" style="color: var(--color-accent-green);">Our Vision</h3>
+                <p class="mb-4">A world where every individual is empowered to grow from the seed of their potential, consciously arranging a life of profound fulfillment and continuous growth.</p>
+                <h3 class="text-xl font-bold mt-6 mb-2" style="color: var(--color-accent-green);">Our Mission</h3>
+                <p>To provide insightful tools and empathetic guidance that help people ground themselves in self-knowledge, cultivate their inner resources, and branch out to create a life of authentic harmony and contentment.</p>
+            </div>
+            <div class="page-footer">sazi.life | Page <span class="page-number">2</span></div>
+        </div>
+        
+        <!-- CONTENT PAGE 2: MODULAR COMPONENTS -->
+        <div id="page-3" class="document-page">
+             <div class="page-content" contenteditable="true">
+                <h2 class="text-3xl font-bold mb-6 border-b-2 pb-3" style="border-color: var(--color-accent-green);">2. Core Pillars</h2>
+                <p class="mb-6">Our philosophy is built upon three pillars, all symbolized by our logo—the Tree of Life and Knowledge.</p>
+                
+                <!-- This is a modular component. Copy/paste this whole div to add another item. -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold" style="color: var(--color-accent-green);">Intentionality (The Seed & Roots)</h3>
+                    <p>The journey begins with the seed of intention and the grounding of roots, which knowingly seek the knowledge and resources needed to grow.</p>
+                </div>
+
+                <!-- This is a modular component. -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold" style="color: var(--color-accent-green);">Creation (The Trunk & Branches)</h3>
+                    <p>The tree actively creates and arranges itself, building a strong core and branching out in the dynamic, lifelong process of becoming.</p>
+                </div>
+
+                <!-- This is a modular component. -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-bold" style="color: var(--color-accent-green);">Fulfillment (The Canopy & Fruit)</h3>
+                    <p>The full, vibrant canopy, providing shelter and bearing fruit, represents the state of fulfillment—a life that is whole, content, and contributes value back to the world.</p>
+                </div>
+
+                <blockquote class="border-l-4 p-4 my-8" style="border-color: var(--color-accent-brown);">
+                    "To live 'knowingly' is to move through the world with intent, making deliberate choices rather than being subject to circumstance."
+                </blockquote>
+            </div>
+            <div class="page-footer">sazi.life | Page <span class="page-number">3</span></div>
+        </div>
+
+        <!-- BACK COVER PAGE -->
+        <div id="page-4" class="document-page cover-page">
+            <div class="sazi-logo w-64 h-64 mx-auto"></div>
+            <p class="text-2xl mt-12" style="font-family: var(--font-heading);" contenteditable="true">sazi.life</p>
+            <p class="text-lg text-gray-300" contenteditable="true">Consciously arranging a life of fulfillment.</p>
+        </div>
+
+    </div>
+
+    <script>
+        /*
+         * JAVASCRIPT FOR INTERACTIVITY
+         * This script handles sharing and dynamic page numbering.
+         */
+        document.addEventListener('DOMContentLoaded', function() {
+            updatePageNumbers();
+            
+            // Make content editable via a button to avoid accidental edits
+            const body = document.body;
+            const editBtn = document.createElement('button');
+            editBtn.innerHTML = '<i class="fas fa-pencil-alt"></i>';
+            editBtn.className = 'control-btn';
+            editBtn.title = 'Toggle Editing';
+            editBtn.onclick = () => {
+                body.contentEditable = body.contentEditable === 'true' ? 'false' : 'true';
+                editBtn.style.backgroundColor = body.contentEditable === 'true' ? '#f87171' : 'var(--color-accent-green)';
+            };
+            document.querySelector('.controls').prepend(editBtn);
+        });
+
+        function updatePageNumbers() {
+            const pages = document.querySelectorAll('.document-page:not(.cover-page)');
+            pages.forEach((page, index) => {
+                const pageNumEl = page.querySelector('.page-number');
+                if (pageNumEl) pageNumEl.textContent = index + 2; // Start after cover
+            });
+        }
+
+        async function shareDocument() {
+            const title = document.querySelector('h1').textContent;
+            const text = `Please review this sazi.life document: ${title}`;
+            if (navigator.share) {
+                try {
+                    await navigator.share({
+                        title: title,
+                        text: text,
+                        url: window.location.href
+                    });
+                } catch (err) {
+                    console.error('Error sharing:', err);
+                    alert('Could not share document.');
+                }
+            } else {
+                // Fallback for browsers that don't support navigator.share
+                try {
+                    await navigator.clipboard.writeText(`${text}\n${window.location.href}`);
+                    alert('Share link copied to clipboard!');
+                } catch (err) {
+                    console.error('Error copying to clipboard:', err);
+                    alert('Could not copy share link.');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
