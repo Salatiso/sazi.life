@@ -1,0 +1,37 @@
+<!-- This is the header component. It gets loaded into the #header-placeholder div. -->
+<div class="bg-surface shadow-md">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <!-- Brand Logo/Name -->
+        <a href="index.html" class="text-2xl font-bold font-heading text-text">
+            sazi<span class="text-accent-green">.</span>life
+        </a>
+
+        <!-- Navigation Links & Language Switcher -->
+        <div class="flex items-center space-x-6">
+            <a href="#" class="text-text hover:text-accent-green transition-colors" data-translate-key="nav_about">About</a>
+            <a href="#" class="text-text hover:text-accent-green transition-colors" data-translate-key="nav_tools">Tools</a>
+            <a href="#" class="text-text hover:text-accent-green transition-colors" data-translate-key="nav_contact">Contact</a>
+
+            <!-- Language Switcher -->
+            <div class="relative">
+                <select id="language-switcher" class="form-select bg-background border-gray-700 text-sm py-2 pl-9 pr-4 appearance-none rounded-md focus:outline-none focus:ring-2 focus:ring-accent-green">
+                    <option value="en">English</option>
+                    <option value="xh">isiXhosa</option>
+                    <option value="zu">isiZulu</option>
+                    <option value="af">Afrikaans</option>
+                    <option value="st">Sesotho</option>
+                    <option value="nso">Sepedi</option>
+                    <option value="ts">Xitsonga</option>
+                    <option value="ve">Tshivenḓa</option>
+                    <option value="tn">Setswana</option>
+                    <option value="ss">siSwati</option>
+                    <option value="nr">isiNdebele</option>
+                    <option value="sw">Kiswahili</option>
+                    <option value="pt">Português</option>
+                    <option value="fr">Français</option>
+                </select>
+                <i class="fas fa-language absolute left-3 top-1/2 -translate-y-1/2 text-muted pointer-events-none"></i>
+            </div>
+        </div>
+    </nav>
+</div>
